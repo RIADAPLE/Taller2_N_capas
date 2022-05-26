@@ -96,11 +96,11 @@ public class ReportController {
         try {
 
             JasperParameters jasperParameters = new JasperParameters();
-            jasperParameters.addParameter("P_ID_PERSONA", idCarro);
-            jasperParameters.addParameter("P_FECHA_INICIO", marca);
-            jasperParameters.addParameter("P_FECHA_FIN", placa);
-            jasperParameters.addParameter("P_ID_DEPARTAMENTO", color);
-            jasperParameters.addParameter("P_ID_MUNICIPIO", modelo);            
+            jasperParameters.addParameter("P_ID_CARRO", idCarro);
+            jasperParameters.addParameter("P_MARCA", marca);
+            jasperParameters.addParameter("P_PLACA", placa);
+            jasperParameters.addParameter("P_COLOR", color);
+            jasperParameters.addParameter("P_MODELO", modelo);            
             
 
             if (typeexport.equals("pdf")) {
